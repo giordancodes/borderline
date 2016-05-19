@@ -1,0 +1,15 @@
+@import 'setup';
+@import 'modular-scale';
+
+body {
+	background: #222;
+}
+
+section.input{
+	#one{
+		width: 100%;
+	}
+	h3{
+		color: azure;
+	}
+}
