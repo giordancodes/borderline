@@ -1,6 +1,9 @@
 @import 'setup';
 @import 'modular-scale';
 
+$ms-base: .6em;
+$ms-ratio: $golden;
+
 body {
 	background: #222;
 }
@@ -9,7 +12,24 @@ section.input{
 	#one{
 		width: 100%;
 	}
+	h1{
+		font-size: ms(6);
+	}
+	h2{
+		font-size: ms(5);
+	}
 	h3{
 		color: azure;
+		font-size: ms(4);
+	}
+	h4{
+		font-size: ms(3);
+	}
+	h5{
+		font-size: ms(2);
+	}
+	h6{
+		color: azure;
+		font-size: ms(1);
 	}
 }
