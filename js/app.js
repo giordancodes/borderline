@@ -1,8 +1,8 @@
 'use strict';
 
-$(function () {
+var app = {};
 
-	var app = {};
+$(function () {
 
 	app.inputOne = function () {
 		console.log('eyyyy');
