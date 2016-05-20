@@ -4,10 +4,11 @@ $( ()=>	{
 	
 	app.inputOne = ()=>{
 		
-		console.log('eyyyy');
-		
-		app.one = $('#one').text();
-		console.log(app.one);
+		$( 'oneInput' ).on('click'), ()=>{
+			app.one = $( '#one' ).text();
+			console.log(app.one);
+			
+		}
 	}
 	
 	
