@@ -1,5 +1,6 @@
 @import 'setup';
 @import 'modular-scale';
+@import 'colors';
 
 $ms-base: .6em;
 $ms-ratio: $golden;
@@ -9,16 +10,29 @@ body {
 	font-size: 62.5%;
 }
 
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+
 section.input{
-	.flex{
-		display: flex;
-		flex-wrap: wrap;
+	.flex:first-child{
+		margin-top: ms(5);
 	}
 	#one{
 		width: 80%;
-		margin-top: 40px;
 		padding: 1rem;
-		font-size: ms(2.6)
+		font-size: ms(2.6);
+		padding: 0;
+	}
+	button{
+		width: 20%;
+		font-size: ms(2);
+		height: ms(3);
+		margin: 0;
+		padding: 0;
+		background-color: crimson;
+		border: none;
 	}
 	h1{
 		font-size: ms(6);
