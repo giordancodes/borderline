@@ -5,14 +5,14 @@ var app = {};
 $(function () {
 
 	app.inputOne = function () {
-
-		$('oneInput').on('click'), function () {
-			app.one = $('#one').text();
-			console.log(app.one);
-		};
+		app.one = $('#one').val();
+		//		check if text input is empty, reset after click
+		app.one.replace(/\s+/g, '') === '' ? app.one = 'Hello' : console.log(app.one);
+		$('#one').val(' ');
 	};
+	console.log(app.one);
 });
 
 $(document).ready(function () {
-	app.inputOne();
+	$('#oneButton').on('click', app.inputOne);
 });
