@@ -2,13 +2,17 @@
 @import 'modular-scale';
 @import 'colors';
 
-$ms-base: .6em;
+
+$roboto: 'Roboto', sans-serif;
+$ms-base: .7em;
 $ms-ratio: $golden;
 
 body {
 	background: $black;
 	font-size: 62.5%;
+	font-family: $roboto;
 }
+
 
 .flex{
 	display: flex;
@@ -16,8 +20,13 @@ body {
 }
 
 section.input{
+	padding: 0 ms(3);
 	.flex:first-child{
 		margin-top: ms(5);
+	}
+	.headings{
+		align-items: center;
+		justify-content: space-between;
 	}
 	#one{
 		width: 80%;
@@ -37,24 +46,30 @@ section.input{
 		background-color: darken($red, 25%);
 		border: none;
 	}
+
 	h1{
-		font-size: ms(6);
+		font-weight: 100;
+		font-size: ms(7);
+		color: $white;
 	}
 	h2{
-		font-size: ms(5);
+		font-weight: 300;
+		font-size: ms(6);
 	}
 	h3{
-		color: azure;
-		font-size: ms(4);
+		font-weight: 400;
+		font-size: ms(5);
 	}
 	h4{
-		font-size: ms(3);
+		font-weight: 500;
+		font-size: ms(4);
 	}
 	h5{
-		font-size: ms(2);
+		font-weight: 700;
+		font-size: ms(3);
 	}
 	h6{
-		color: azure;
-		font-size: ms(1);
+		font-weight: 900;
+		font-size: ms(2);
 	}
 }
